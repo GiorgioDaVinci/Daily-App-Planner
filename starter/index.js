@@ -1,8 +1,10 @@
+// The document.ready function enables the html file to load first before the js file
 $(document).ready(function () {
+    // prints the current day at the top of the page
   var currentDate = dayjs();
   $("#currentDay").text(currentDate.format("dddd, MMMM D YYYY"));
 
-  // Load events from local storage
+  // Loads events from local storage
   function loadEvents() {
     $(".description").each(function () {
       var hour = $(this).data("hour");
@@ -13,12 +15,12 @@ $(document).ready(function () {
     });
   }
 
-  // Save events to local storage
+  // Saves events to local storage
   function saveEvent(hour, event) {
     localStorage.setItem("event_" + hour, event);
   }
 
-  // Update time blocks based on current time
+  // Updates time blocks based on current time
   function updateTimeBlocks() {
     var currentHour = currentDate.hour();
 
