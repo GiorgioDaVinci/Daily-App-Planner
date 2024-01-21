@@ -8,6 +8,8 @@ This was dynamically created using the dayjs library.
 
 As the image shows, the user can add events to the timeblock and save them to the timeblock once the save button is clicked on the righ-hand side of the timeblock.
 
+Here is a link to the deployed application: https://giorgiodavinci.github.io/Daily-App-Planner/
+
 md
     ![alt text](/images/Daily-planner.png)
     
